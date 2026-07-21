@@ -56,3 +56,25 @@ def absolute(x):
 	else:
 		return -x
 
+
+def factorial(n):
+	"""
+	返回 n 的阶乘
+
+	参数：
+	    n:非负整数
+
+	返回:
+	    n!
+
+	"""
+
+	result = 1
+
+	for i in range(1,n+1):
+
+		result = result * i
+
+	return result
+
+
