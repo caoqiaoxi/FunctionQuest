@@ -1,2 +1,2 @@
-from .algebra import square, cube, power
+from .algebra import square, cube, power, absolute
 

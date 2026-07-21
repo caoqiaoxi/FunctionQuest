@@ -37,3 +37,22 @@ def power(x,n):
 
 	return result
 
+
+def absolute(x):
+	"""
+	返回 x 的绝对值
+
+	参数：
+	    x: int 或 float
+
+	返回:
+	    |x|
+
+	"""
+
+	if x >= 0:
+		return x
+
+	else:
+		return -x
+
