@@ -104,3 +104,23 @@ def sign(x):
 		return -1
 
 
+def gcd(a,b):
+	"""
+	返回两个整数的最大公约数
+	
+	使用欧几里得算法
+
+	参数：
+	    a,b: 整数
+
+	返回:
+	    gcd(a,b)
+
+	"""
+
+	while b != 0:
+		a,b = b, a % b
+
+	return a
+
+

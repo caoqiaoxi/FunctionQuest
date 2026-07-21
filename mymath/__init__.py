@@ -1,2 +1,2 @@
-from .algebra import square, cube, power, absolute, factorial, sign
+from .algebra import square, cube, power, absolute, factorial, sign, gcd
 
