@@ -78,3 +78,29 @@ def factorial(n):
 	return result
 
 
+def sign(x):
+	"""
+	返回数字的符号
+
+	参数：
+	
+	    x: int 或 float
+
+	返回：
+
+	    x > 0 返回1
+	    x = 0 返回0
+	    x < 0 返回-1
+
+	"""
+
+	if x > 0:
+		return 1
+
+	elif x == 0:
+		return 0
+
+	else:
+		return -1
+
+
