@@ -1,3 +1,6 @@
+import math
+
+
 """
 Algebra Module
 作者：Qiaoxi
@@ -122,5 +125,70 @@ def gcd(a,b):
 		a,b = b, a % b
 
 	return a
+
+
+def prime_check(n):
+	"""
+	判断一个整数是否为质数
+
+	参数:
+
+	    n: 整数
+
+	返回:
+
+	    True 或 False
+
+	"""
+
+	if n <= 1:
+		return False
+
+	for i in range(2,n):
+		if n % i == 0:
+			return False
+
+	return True
+
+
+def prime_check_optimize(n):
+	"""
+	判断一个整数是否为质数(优化版)
+	"""
+
+	if n <= 1:
+
+		return False
+
+	limit = int(math.sqrt(n))
+
+	for i in range(2,limit+1):
+
+		if n % i == 0:
+	
+			return False
+
+	return True
+
+
+def lcm(a,b):
+	"""
+
+	返回两个整数的最小公倍数
+
+	使用：
+	    lcm(a,b)=|a * b|/gcd(a,b)
+
+	参数:
+	
+	    a,b:整数
+
+	返回:
+
+	    最小公倍数
+
+	"""
+
+	return absolute(a * b) // gcd(a,b)
 
 
