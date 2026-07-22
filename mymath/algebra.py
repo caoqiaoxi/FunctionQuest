@@ -1,14 +1,13 @@
 import math
 
-
 """
-Algebra Module
-作者：Qiaoxi
-Function Quest
+FunctionQuest Algebra Engine
+Version 1.0
 """
 
 
-def square(x):
+def square(x:float) -> float:
+
 	"""
 	返回 x^2
 	"""
@@ -16,19 +15,19 @@ def square(x):
 
 
 def cube(x):
+
 	"""
 	返回 x^3
 	"""
 	return x * x * x
 
 def power(x,n):
+
 	"""
 	返回 x 的 n 次方
-
 	参数：
 	    x ：底数
 	    n ：指数
-
 	返回：
 	    x^n
 	"""
