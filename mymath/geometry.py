@@ -1,31 +1,35 @@
-def point2d(x,y):
-	"""
-	创建二维坐标点
+import math
 
-	参数:
-	    x:横坐标
-	    y:纵坐标
+class Point3D:
+	
+	def __init__(self,x,y,z):
+		self.x = x
+		self.y = y
+		self.z = z
 
-	返回:
-	    (x,y)
-	"""
+	def norm(self):
+		return math.sqrt(
+			self.x ** 2+
+			self.y ** 2+
+			self.z ** 2
+		)
 
-	return (x,y)
+	def __repr__(self):
+		return f"Point3D({self.x},{self.y},{self.z})"
+
+class Point2D:
+
+	def __init__(self,x,y):
+		self.x = x
+		self.y = y
 
 
-def point3d(x,y,z):
-	"""
-	创建三维空间点
+	def norm(self):
+		return math.sqrt(
+			self.x ** 2+
+			self.y ** 2
+		)
 
-	参数:
-	    x:x轴坐标
-	    y:y轴坐标
-	    z:z轴坐标
-
-	返回:
-	    (x,y,z)
-	"""
-
-	return (x,y,z)
-
+	def __repr__(self):
+		return f"Point2D({self.x},{self.y})"
 
