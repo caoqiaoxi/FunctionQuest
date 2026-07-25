@@ -84,3 +84,26 @@ class Matrix:
 		return Matrix(result)
 
 		
+	def transpose(self):
+		
+		rows = len(self.data)
+
+		cols = len(self.data[0])
+
+		result = []
+
+
+		for j in range(cols):
+
+			row = []
+
+			for i in range(rows):
+
+				row.append(self.data[i][j])
+
+			result.append(row)
+
+
+		return Matrix(result)
+
+
