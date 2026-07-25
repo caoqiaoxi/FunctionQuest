@@ -107,3 +107,32 @@ class Matrix:
 		return Matrix(result)
 
 
+	def det(self):
+
+		rows = len(self.data)
+
+		cols = len(self.data[0])
+
+
+		if rows != cols:
+
+		
+			raise ValueError(
+
+				"Determinant requires square matrix"
+
+			)
+
+		if rows == 2:
+
+			a = self.data[0][0]
+
+			b = self.data[0][1]
+
+			c = self.data[1][0]
+
+			d = self.data[1][1]
+
+		return a * d - b * c
+
+
